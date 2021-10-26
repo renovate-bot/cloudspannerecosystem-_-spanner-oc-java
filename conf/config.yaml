@@ -1,0 +1,10 @@
+
+receivers:
+  opencensus:
+    address: "localhost:55678"
+
+exporters:
+  stackdriver:
+    project: "<google_cloud_platform_project_id>" # optional, defaults to agent project if run on GCP
+    metric_prefix: "<your_metric_prefix>"
+    enable_metrics: <true or false>

@@ -49,21 +49,13 @@ Go to http://localhost:8080/spanner/ and, start sending read request.
 
 ## OpenCensus agent
 
-The `ocagent` can be run directly from sources, binary, or a Docker image. Here will try from the sources.
+The `ocagent` can be run directly from sources, binary, or a Docker image.
+To install and build the agent, please follow the instructions from [here](https://opencensus.io/service/components/agent/install/)
 
-### Cloning source
-Open up a new shell to get the OpenCensus agent
-```bash
-git clone https://github.com/census-instrumentation/opencensus-service.git && cd opencensus-service
-```
-
-### Building it
-```bash
-make agent
-```
-which will place the binary in the bin folder in your current working directory
 
 ### Running it
+Edit the config in conf/config.yaml file to select the exporter of your choice.
+Run the following command to start the OpenCensus agent.
 ```bash
 ./bin/ocagent_darwin --config=/conf/config.yaml
 ```

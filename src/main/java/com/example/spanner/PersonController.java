@@ -52,7 +52,9 @@ public class PersonController {
     String projectId = options.getProjectId();
     dbClient = spanner.getDatabaseClient(DatabaseId.of(projectId, instanceId, databaseId));
 
+    // Register all client-side and server-side grpc views
     BasicSetup.enableOpenCensus();
+    // Register GFELatency and GFE Header Missing Count Views
     SpannerRpcViews.registerGfeLatencyAndHeaderMissingCountViews();
   }
 

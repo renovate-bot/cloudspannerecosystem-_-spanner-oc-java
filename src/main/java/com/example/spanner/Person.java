@@ -15,9 +15,9 @@
  */
 package com.example.spanner;
 
-import org.springframework.stereotype.Component;
+import com.google.auto.value.AutoValue;
 
-@Component
+@AutoValue
 public class Person {
   private String id;
   private String name;

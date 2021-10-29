@@ -22,7 +22,6 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <opencensus.version>0.25.0</opencensus.version>
-    <autovalue.version>1.2</autovalue.version>
     <spanner.version>6.13.0</spanner.version>
   </properties>
 
@@ -85,12 +84,6 @@
       <groupId>io.opencensus</groupId>
       <artifactId>opencensus-contrib-grpc-metrics</artifactId>
       <version>${opencensus.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.auto.value</groupId>
-      <artifactId>auto-value</artifactId>
-      <version>${autovalue.version}</version>
     </dependency>
 
   </dependencies>
